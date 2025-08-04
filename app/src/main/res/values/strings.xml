@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">File Encryptor</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="save_password">Save Password</string>
+    <string name="get_password">Get Password</string>
+    <string name="process_file">Process File</string>
+
+    <string name="get_password_success">Get password successfully.</string>
+    <string name="get_password_notfound">No password saved.</string>
+    <string name="save_password_success">Password saved successfully.</string>
+</resources>

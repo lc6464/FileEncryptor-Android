@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="main" type="id" />
+    <item name="titleTextView" type="id" />
+    <item name="passwordInputLayout" type="id" />
+    <item name="passwordEditText" type="id" />
+    <item name="savePasswordButton" type="id" />
+    <item name="getPasswordButton" type="id" />
+    <item name="processFileButton" type="id" />
+    <item name="progressBar" type="id" />
+</resources>
