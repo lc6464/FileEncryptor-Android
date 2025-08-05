@@ -1,17 +1,18 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    // alias(libs.plugins.kotlin.compose)
 }
 
 android {
     namespace = "cn.lc6464.fileencryptor"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "cn.lc6464.fileencryptor"
         minSdk = 31
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 2
         versionName = "2.0"
 
@@ -32,8 +33,10 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    kotlinOptions {
-        jvmTarget = "11"
+    kotlin {
+        compilerOptions {
+            jvmTarget = JvmTarget.JVM_11
+        }
     }
     buildFeatures {
         viewBinding = true
@@ -53,8 +56,6 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
 
     implementation(libs.androidx.lifecycle.runtime.ktx)
-
-    implementation(libs.androidx.security.crypto)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
